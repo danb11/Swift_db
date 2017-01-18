@@ -28,5 +28,26 @@ struct ArrayPractice {
             }
             return resultArray
     }
+    func fillArray (lines:Int) -> Array<Array<Int>> {
+        let result = Array<Array<Int>>()
+        for A in 1...lines {
+            for B in 1...A {
+                let B = (A-1)*5+B
+                print (B, terminator:" ")
+                }
+                print ()
+            }
+        return result
+    }
 }
+  //  func setBoolArray(lines:Int)->Array<Array<Int>> {
+    //    let result2 = Array<Array<Int>>()
+      //  for f in 1...lines {
+        //    var f = f-lines
+          //  print ("f",terminator:" ")
+            //for t in 1...f {
+             //   var t =
+          //  }
+    //}
+   //     print()
 
