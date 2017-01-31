@@ -100,6 +100,7 @@
 				TargetAttributes = {
 					B721A9AC1E24734400BCBA58 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7CBQS6T43F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -226,6 +227,8 @@
 		B721A9B51E24734400BCBA58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 7CBQS6T43F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -234,6 +237,8 @@
 		B721A9B61E24734400BCBA58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 7CBQS6T43F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

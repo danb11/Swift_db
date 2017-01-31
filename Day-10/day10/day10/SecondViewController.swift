@@ -37,6 +37,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] {
             imageView.image = image as? UIImage
+            //
         }
         else {
             

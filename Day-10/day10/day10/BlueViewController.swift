@@ -10,6 +10,7 @@ import UIKit
 
 class BlueViewController: UIViewController {
     var titleString : String = ""
+    //var dataDictionary : [String:Any] = [:]
     
     
     @IBOutlet weak var titleLable: UILabel!
@@ -23,8 +24,13 @@ class BlueViewController: UIViewController {
         super.viewWillLayoutSubviews()
         //override에는 이걸 꼭 써줘야함
         titleLable.text = titleString
+        // titleLable.text = dataDictionary["title"] as? String
     }
     
+    @IBAction func close(_ sender: Any) {
+        //self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
    /*
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

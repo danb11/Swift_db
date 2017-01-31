@@ -19,14 +19,27 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "firstSegue" {
             let Blue : BlueViewController = segue.destination as! BlueViewController
             Blue.titleString = "Hey, Hello"
+            // Blue.titleString = ["title":"딕셔너리사전"]
         }
     }
-
-
+    */
+    @IBAction func nextButton(_ sender: Any) {
+        let BlueVC : BlueViewController = storyboard?.instantiateViewController(withIdentifier: "BlueVC") as! BlueViewController
+        
+        BlueVC.titleString = "Hey, Hey"
+        if let navigation = navigationController {
+            navigation.pushViewController(BlueVC, animated: true)
+        }
+       // present(BlueVC, animated: true, completion: nil)
+        //액션으로 BlueVC와 연결
+    }
 }
+
+
+
 
